@@ -5,6 +5,12 @@
 #ifndef FUNCTIONSINSTRUCT_STRUCTWITHFUNCTIONS_H
 #define FUNCTIONSINSTRUCT_STRUCTWITHFUNCTIONS_H
 
+typedef struct Player {
+    int x, y;
+    int speed;
+    void (*moveXaYa)(int, int);
+}player_t;
+
 typedef struct newStruct{
     int a;
     int (*length) ();
